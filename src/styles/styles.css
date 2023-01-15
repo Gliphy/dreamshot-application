@@ -1,0 +1,39 @@
+.basket {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 519px;
+    top: 912px;
+    background: url('../../public/images/shopping-basket2.png') no-repeat fixed center ;
+}
+
+.dropdown-menu::before {
+    content: '';
+    position: absolute;
+    width: 479.58px;
+    height: 370px;
+    left: 491px;
+    top: 485px;
+
+    background: red;
+    border-radius: 15px;
+    backdrop-filter: grayscale(30%);
+    transform: rotate(45deg);
+
+}
+
+.dropdown-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition:  var(--speed) ease;
+
+}
+
+.dropdown-menu.inactive {
+    opacity: 1;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition:  var(--speed) ease;
+
+}
